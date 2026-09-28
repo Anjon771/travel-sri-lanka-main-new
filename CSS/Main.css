@@ -1,0 +1,499 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap');
+
+.container-fluid {
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+html,
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+ol,
+ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.clear {
+    clear: both;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.wrap {
+    width: 80%;
+    margin: 0 auto;
+    transition: all .2s linear;
+}
+
+
+
+
+.header {
+    background: #323A45;
+    border-bottom: 2px solid #00B895;
+}
+
+.logo b {
+    color: #FFF;
+    font-size: 30px;
+    float: left;
+    padding: 5px 5;
+    font-family: Lobster;
+    padding-top: 10px;
+}
+
+.top-nav {
+    float: right;
+}
+
+.top-nav ul li {
+    display: inline-block;
+    float: left;
+}
+
+.top-nav ul li a {
+    font-family: 'Roboto', sans-serif;
+    color: #d6d6d6;
+    padding: 42px 16px;
+    display: block;
+    position: relative;
+    text-transform: uppercase;
+    transition: 0.5s ease;
+    -o-transition: 0.5s ease;
+    -webkit-transition: 0.5s ease;
+    font-size: 0.875em;
+    position: relative;
+}
+
+.top-nav li.active a,
+.top-nav li a:hover {
+    color: #FFF;
+    background: #00B895;
+}
+
+.slider {
+    position: absolute;
+    left: 0;
+    width: 500%;
+    height: 100%;
+    animation: animate 10s linear infinite;
+}
+
+.slider .slide {
+    position: relative;
+    width: 20%;
+    height: 100%;
+    float: left;
+}
+
+.slider .slide .caption {
+    position: absolute;
+    bottom: 60px;
+    left: 60px;
+    right: 60px;
+    padding: 30px;
+    background: rgba(0, 0, 0, .5);
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+
+.slider .slide .caption h2 {
+    margin: 0 0 20;
+    padding: 0;
+    color: #fff;
+    font-size: 48px;
+    transition: 0.5s;
+}
+
+.slider .slide .caption p {
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    font-size: 20px;
+    transition: 0.5s;
+}
+
+@media (max-width: 768px) {
+    .slider .slide .caption {
+        position: absolute;
+        bottom: 20px;
+        left: 20px;
+        right: 20px;
+        padding: 20px;
+    }
+
+    .slider .slide .caption h2 {
+        margin: 0 0 10;
+        font-size: 30px;
+    }
+
+    .slider .slide .caption p {
+        font-size: 16px;
+    }
+}
+
+@keyframes animate {
+    0% {
+        left: 0;
+    }
+
+    20% {
+        left: 0;
+    }
+
+    25% {
+        left: -100%;
+    }
+
+    45% {
+        left: -100%;
+    }
+
+    50% {
+        left: -200%;
+    }
+
+    70% {
+        left: -200%;
+    }
+
+    75% {
+        left: -300%;
+    }
+
+    95% {
+        left: -300%;
+    }
+
+    100% {
+        left: -400%;
+    }
+}
+
+.container .slider .slide.slide1 {
+    background: url('Assets/1.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.container .slider .slide.slide2 {
+    background: url(2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.container .slider .slide.slide3 {
+    background: url(3.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.container .slider .slide.slide4 {
+    background: url(4.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.discover {
+    text-align: center;
+    font-size: 100px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, '', Times, serif;
+}
+
+button {
+    object-position: center;
+    border: none;
+    padding-top: 100px;
+    border-radius: 2rem;
+    padding: 1rem 3rem;
+    font-size: 1rem;
+    cursor: pointer;
+    font-size: 50px;
+    font-family: Balsamiq Sans;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    font-size: 80px;
+    font-family: Lobster;
+}
+
+.welcomesl {
+    text-align: justify;
+    font-size: 25px;
+}
+
+.welcomeagain {
+    text-align: center;
+    font-size: 25px;
+    font-style: italic;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.wheretogo {
+    font-size: 1rem;
+    font-size: 50px;
+    font-family: Balsamiq Sans;
+}
+
+.para {
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 100px;
+    padding-right: 100px;
+    font-size: 18px;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+    padding: 2px 16px;
+}
+
+.footer {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(35, 32, 39);
+    color: white;
+    text-align: center;
+}
+
+.content_top {
+    background: #45B39E;
+    padding: 50px 0;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+}
+
+#cd {
+    width: 200px;
+    height: auto;
+    margin: 0 auto;
+    padding: 10px;
+    position: relative;
+}
+
+.flaticon-multimedia:before {
+    content: "\f134";
+}
+
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+    margin: 0 auto;
+    padding: 00px;
+    position: relative;
+    background-color: transparent;
+    width: 400px;
+    height: 300px;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px;
+}
+
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+
+.flip-card-front {
+    background-color: #bbb;
+    color: black;
+}
+
+
+.flip-card-back {
+    background-color: #555;
+    color: white;
+    transform: rotateY(180deg);
+}
+
+.parallax {
+    /* The image used */
+    background-image: url('../Assets/para.png');
+
+    /* Full height */
+    height: 100%;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#center {
+    margin: auto;
+    padding: 10px;
+}
+
+#viewmore {
+    background-color: #00B895;
+
+}
+
+#news {
+    border-style: solid;
+    border-color: #00B895;
+    border-radius: 12px;
+    height: 18%;
+    width: 100%;
+    margin: 5px;
+    padding: 2px;
+    text-align: center;
+    font-family: "Adobe Devanagari";
+    margin-bottom: 20px;
+
+}
+
+#newsdetails {
+    border-style: solid;
+    border-color: #00B895;
+    border-radius: 12px;
+    height: 100%;
+    width: 100%;
+    margin: 5px;
+    padding: 2px;
+    text-align: center;
+    font-family: "Adobe Devanagari";
+}
+
+#about {
+    border-style: solid;
+    border-color: #00B895;
+    text-align: center;
+    padding: 10px;
+}
+
+#footerlink {
+    color: white
+}
+
+#header-img {
+    text-align: left;
+}
+
+
+#myVideo {
+    right: 0;
+    bottom: 0;
+    width: 2%;
+    height: auto;
+}
+
+
+.content {
+    position: fixed;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+}
+
+#myBtn {
+    width: 200px;
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+}
+
+#myBtn:hover {
+    background: #ddd;
+    color: black;
+}
+
+
+.counter {
+    background-color: #eaecf0;
+    text-align: center;
+}
+
+.tourists,
+.places,
+.events {
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+
+.counter-count {
+    font-size: 18px;
+    background-color: #00B895;
+    border-radius: 50%;
+    position: relative;
+    color: #ffffff;
+    text-align: center;
+    line-height: 92px;
+    width: 92px;
+    height: 92px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    display: inline-block;
+}
+
+.tourists-p,
+.places-p,
+.events-p {
+    font-size: 24px;
+    color: #000000;
+    line-height: 34px;
+}
+
+#footericon {
+    width: 50px;
+    height: auto;
+}
